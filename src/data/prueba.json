@@ -1,0 +1,14 @@
+[
+    {
+        "Feb": {
+            "1": {
+                "question": "Cuando se busca un elemento en un vector usando la tecnica del centinela, en cada iteración la condicion del bucle:",
+                "a": "Primero comprubea si se ha encontrado el elemento y despues si se ha alacanzado el final del vector.",
+                "b": "Primero comprueba si se ha alcanzado el fin del vector, y despues si se ha encontrado el elemento",
+                "c": "Solo comprueba si se ha encontrado el elemento.",
+                "d": "Solo comprueba si se ha alacanzado el fin del vector.",
+                "reply": "d"
+            }
+        }
+    }
+  ]
