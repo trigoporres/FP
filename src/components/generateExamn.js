@@ -1,16 +1,18 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import Questions from "./questions"
 
 function getProjectsList(data) {
-  const values = []
+  let value = []
   debugger
   data.allPruebaJson.edges.forEach(item => {
-    values.push(item.node.Feb._1.question)
+    value.push(<Questions item={item.node} />)
   })
-  return values
+  debugger
+  return value
 }
 
-const ComponentName = () => (
+const GenerateExamen = () => (
   <StaticQuery
     query={graphql`
       {
@@ -32,8 +34,8 @@ const ComponentName = () => (
         }
       }
     `}
-    render={data => <pre>{getProjectsList(data)}</pre>}
+    render={data => <div>{getProjectsList(data)}</div>}
   ></StaticQuery>
 )
 
-export default ComponentName
+export default GenerateExamen

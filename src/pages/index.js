@@ -1,37 +1,21 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
-import Preguntas from "../components/preguntas"
+// import Preguntas from "../components/preguntas"
+import ExamnsList from "../components/exams"
 
-// import { graphql } from "gatsby"
-
-// const query = graphql`
-//   {
-//     allPruebaJson {
-//       edges {
-//         node {
-//           value
-//         }
-//       }
-//     }
-//   }
-// `
-debugger
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Preguntas />
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <SEO title="Funfamentos de programación" />
+    <h1>Hola!!</h1>
+    <p>
+      Este es un prjecto sobre la asignatura de fundamentos de programación de
+      UNED
+    </p>
+    <h2>Examenes</h2>
+    <ExamnsList />
+    {/* <Preguntas /> */}
   </Layout>
 )
 
